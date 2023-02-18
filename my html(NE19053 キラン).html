@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>シュレスタ　キラン</title>
+    <title>mobiForge geolocation static map demo</title>
+    <style>
+      #map {width:100%;height:100%;}
+    </style>
+    <script>
+     
+      function initGeolocation() {
+        if (navigator && navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+        } else {
+          console.log('Geolocation is not supported');
+        }
+      }
+     
+      function errorCallback() {}
+     
+      function successCallback(position) {
+        var mapUrl = "http://maps.google.com/maps/api/staticmap?center=";
+        mapUrl = mapUrl + position.coords.latitude + ',' + position.coords.longitude;
+        mapUrl = mapUrl + '&zoom=15&size=512x512&maptype=roadmap&sensor=false';
+        var imgElement = document.getElementById("static-map");
+        imgElement.src = mapUrl;
+      }
+    </script>
+  </head>
+  <body onload="javascript:initGeolocation()">
+    <div id="map">
+      <img id="static-map" src="blank.gif" />
+    </div>
+  </body>
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="myhtml_css.css">
+<link rel="stylesheet" href="myhtml_css_color_type_a.css">
+
+
+</head>
+<body>
+
+<header>
+<h1>My HTML (NE19053 シュレスタ　キラン ) 1年後期</h1>	
+<nav>
+<ul>
+<li><a href="HTML（教科書2019年度１年後期）.pdf" target="_blank" title="テスト">HTML&CSS</a></li>
+<li><a href="../kiran/sample.html" target="_blank" title="テスト">キラン</a> </li>
+<li><a href="1-1/initial.html" target="_blank" title="テスト">作成したHTML</a> </li>
+ <li><a href="1-2/initial.html" target="_blank" title="テスト">参考リンク</a> </li>
+ <li><a href="1-3/br.html" target="_blank" title="テスト">授業の感想</a></li>
+</li>
+</ul>
+</nav>
+</header>
+<main>
+<h2 id="#sakusei"><ruby>作成<rt>さくせい</rt></ruby>したHTML</h2>
+<table border = "1"  bordercolor = "# FFFEEE">
+<tr>
+　　<th>#</th>
+　　<th>章</th>
+　　<th>リンク</th>
+　　<th>学んだこと</th>
+</tr>
+<tr>
+　　<td>1-2</td>
+　　<td>イニシャルHTML</td>
+　　<td><a href="1-1/initial.html">initial.html</a></td>
+     <td>イニシャルHTMLとしてHTMLの基本的な部分的なをさくせいした</td>
+</tr>
+<tr>
+　　<td>1-3</td>
+　　<td>見出し(heading)</td>
+　　<td><a href="1-1/br.html">br.html</a>
+            </td>
+    <td>brのタグ</td>
+</tr>
+<tr>
+　　<td>1-4</td>
+　　<td>段落　改行</td>
+　　<td><a href="1-4/p.html">p.html</a></td>
+　　<td>pのダグ</td>
+
+</tr>
+<tr>
+　　<td>1-6</td>
+　　<td>イメージ</td>
+　　<td><a href="1-6/img.html">img.html</a></td>
+　　<td>imgのタグ</td>
+</tr>
+<tr>
+　　<td>1-7</td>
+　　<td>ハイパーリンク</td>
+　　<td><a href="1-7/a.html">a.html</a>
+          <br><a href="1-7/img-l2.html">img-l2.html</a> </td>
+　　<td>HyperLinkを勉強した。</td>
+</tr>
+<tr>
+　　<td>1-8</td>
+　　<td>リスト</td>
+　　<td><a href="1-8/list.html">list.html</a></td>
+　　<td>List のタグを勉強した。</td>
+</tr>
+<tr>
+　　<td>1-9</td>
+　　<td>テーブル</td>
+　　<td><a href="1-9/tabel.html">tabel.html</a>
+    <br><a href="1-9/table-L2.html">table-L2.html</a><br>
+             <a href="1-9/time table.html">time table.html</a> </td>
+　　<td>Table Tagの書き方、セルのＭａｒｇｅを勉強した</td>
+</tr>
+<tr>
+　　<td>1-10</td>
+　　<td>テキスト</td>
+　　<td><a href="1-10/text.html" >text.html</a></td>
+　　<td>Strong, Mark, Ruby ETC</td>
+</tr>
+<tr>
+　　<td>1-11</td>
+　　<td>マルチメディア</td>
+　　<td><a href="1-11/iframe.html">iframe.html</a><br>
+              <a href="1-11/video.html">video.html</a></td>
+　　<td>Movie, InlineFrame, GoogleMap のうめこみなどをべんきょうした。</td>
+</tr>
+</table>
+</main>
+<aside>
+<h2 id="Sankou"><ruby>参考<rt>さんこう</rt></ruby>リンク</h2>
+<ul>
+<li><a href="http://honttoni.blog74.fc2.com/">ほんっとにははじめてのHTML5とCSS3</a> </li>
+<li><a href="https://www.colordic.org/">カラーコード</a> </li>
+</ul>
+<h2 id="Kansou"><ruby>授業<rt>じゅぎょう</rt>の</ruby><ruby>感想<rt>かんそう</rt></ruby></h2>
+<p>
+10月から学んだ、フォルダ1-1から1-11までのHTMLです。
+</p>
+<img src="1-6/azuma_logo.png" width=230px height=40px alt="あずま">
+<li><a href="https://azecacjp-my.sharepoint.com/:x:/g/personal/ne19053_azec_ac_jp/Ea4MLChMqQVLvF4Sj4eNZmABGlxCogh5YWsMNZaj7rr7Vg?e=fIK5JQ" target="_blank" title="テスト">EXCEL(Q3までの問題)</a></li>
+<img src="file.gif" width=230px height=230px alt="gif">
+</aside>
+<footer>
+<p>created by キラン</p>
+</footer>
+
+　
+</body>
+</html>
